@@ -4,7 +4,309 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!-- Left Side bar -->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-2 sidebar">
+            <div class="col-sm-2 sidebarWrapper row">
+                <img class="col-xs-6 col-md-12 user-pic" src="images/kd1.png" alt="Kuldeep Singh">
+                <button class="btn downloadResume" type="submit" onclick="window.open('/KuldeepSingh-Resume.pdf')">
+                    <i class="fa fa-download"></i> Download CV
+                </button>
+                <div class="row left-social">
+                    <a target="_new" href="https://github.com/kuldeepsingh-in"><i class="fa fa-github fa-2x"></i></a>
+                    <a target="_new" href="https://www.linkedin.com/in/kuldeepsingh-in"><i class="fa fa-linkedin fa-2x"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                    <!--<a target="_new" href="https://www.instagram.com/kuldeep.singh.k/"><i class="fa fa-instagram fa-2x"></i></a> -->
+                    <a href="mailto:in.singhkuldeep@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+                </div>
+                <div class="menu">
+                    <div class="toggle-btn">
+                        <span class="lines"></span>
+                    </div>
+                    <ul class="nav webOnly">
+                        <li class="active">
+                            <a href="#about">
+                                <i class="fa fa-user-circle-o fa-2x"></i><span style="font-size:small">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#skills">
+                                <i class="fa fa-code fa-2x"></i><span style="font-size:small">Skills</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#certifications">
+                                <i class="fa fa-certificate fa-2x"></i><span style="font-size:small">Certification</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#experience">
+                                <i class="fa fa-briefcase fa-2x"></i><span style="font-size:small">Work</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#education">
+                                <i class="fa fa-university fa-2x"></i><span style="font-size:small">Education</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--Mobile only Menu item-->
+                    <ul class="nav mobileOnly">
+                        <li class="active">
+                            <a href="#about"><i class="fa fa-user-circle-o fa-2x"></i> Home</a>
+                        </li>
+                        <li>
+                            <a href="#skills"><i class="fa fa-code fa-2x"></i> Skills</a>
+                        </li>
+                        <li>
+                            <a href="#certifications"><i class="fa fa-certificate fa-2x"></i> Certification</a>
+                        </li>
+                        <li>
+                            <a href="#experience"><i class="fa fa-briefcase fa-2x"></i> Work</a>
+                        </li>
+                        <li>
+                            <a href="#education"><i class="fa fa-university fa-2x"></i> Education</a>
+                        </li>
+                    </ul>
+                </div><!-- end Menu -->
+            </div>
+        </div>
+    </div><!-- end row -->
 </div>
+<!-- end Left Side bar -->
+
+<!-- Right Side bar -->
+<div class="container rightContainer">
+    <div class="row">
+        <div class="col-xs-12 col-sm-9 pull-right">
+            <!-- About section col-sm-offset-3 -->
+            <section id="about">
+                <div class="about-background mainContentWrapper">
+                    <div class="section-title">
+                        <h2><i class="fa fa-user-circle-o"></i> About me</h2>
+                    </div>
+                    <div class="content-box">
+                        <h1 style="color: var(--fontColor1); ">
+                            Hello! I am <strong>Kuldeep</strong>
+                            <br>CLOUD SOLUTION ARCHITECT | DATA & ANALYTICS | MANAGER
+                        </h1>
+                        <p>
+                            Kuldeep is a Cloud Solution Architect with over a decade of experience in delivering innovative and scalable solutions on Azure platform.
+                            Kuldeep is experienced in delivering data-driven and sustainable solutions on the Azure platform that drive business value.
+                        </p>
+                        <p>
+                            Kuldeep is Microsoft certified Cloud Solution Architect, DevOps Expert and Data Engineer.
+                            <br>#Azure #CloudArchitect #SolutionDesign #ModernDataArchitecture #Data&Analytics
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- end About section -->
+            <!-- skills section -->
+            <section id="skills">
+                <div class="about-background mainContentWrapper">
+                    <div class="section-title">
+                        <h2><i class="fa fa-code"></i> Skills</h2>
+                    </div><!-- end Section Title -->
+                    <div id="dynamicSkills" class="content-box text-center">
+                        <!-- Dynamic list is in Javascript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Badges section -->
+            <section id="certifications">
+                <div class="about-background mainContentWrapper">
+                    <div class="section-title">
+                        <h2><i class="fa fa-certificate"></i> Certification</h2>
+                    </div>
+                    <div id="dynamicBadges" class="content-box text-center">
+                        <!-- Dynamic list is in Javascript -->
+                    </div>
+                </div>
+            </section>
+            <!-- end Badges section -->
+            <!-- WorkExperience section -->
+            <section id="experience">
+                <div class="mainContentBackground mainContentWrapper">
+                    <div class="section-title">
+                        <h2><i class="fa fa-briefcase"></i> Work Experience</h2>
+                    </div>
+                    <div class="content-box">
+                        <div class="resume-box">
+                            <div class="row">
+                                <div class="col-xs-2 col-sm-2 col-md-2">
+                                    <img class="company-pic" src="images/Company/4-pwc.png" alt="">
+                                </div>
+                                <div class="col-xs-9 col-sm-9 col-md-10 pull-right">
+                                    <h5>PwC UK</h5>
+                                    <h3>Manager / Cloud Solution Architect</h3>
+                                    <div class="row" style="height:30px;">
+                                        <span class="col-xs-12 col-sm-6 text-left">June 2022 – Present</span>
+                                        <span class="col-xs-12 col-sm-6 text-right">London, UK</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--    <div class="row">
+                                <ul class="col-xs-12 col-sm-12 col-md-10 pull-right">
+                                    <li class="experiencelist">
+                                        Led the design of a multi cloud solution using Azure as the primary cloud for an insurance client, enabling secure data storage and access across multiple data products.
+                                    </li>
+                                    <li class="experiencelist">
+                                         Provided technical guidance and mentoring to different teams on best practices and standards for Azure solutions.
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </div>
+
+                        <div class="resume-box">
+                            <div class="row">
+                                <div class="col-xs-2 col-sm-2 col-md-2">
+                                    <img class="company-pic" src="images/Company/3-msft.png" alt="">
+                                </div>
+                                <div class="col-xs-9 col-sm-9 col-md-10 pull-right">
+                                    <h5>Microsoft</h5>
+                                    <h3>Cloud Solution Architect</h3>
+                                    <div class="row" style="height:30px;">
+                                        <span class="col-xs-12 col-sm-6 text-left">July 2019 - May2022</span>
+                                        <span class="col-xs-12 col-sm-6 text-right">London, UK</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="resume-box">
+                            <div class="row">
+                                <div class="col-xs-2 col-sm-2 col-md-2">
+                                    <img class="company-pic" src="images/Company/3-msft.png" alt="">
+                                </div>
+                                <div class="col-xs-9 col-sm-9 col-md-10 pull-right">
+                                    <h5>Microsoft</h5>
+                                    <h3>Consultant</h3>
+                                    <div class="row" style="height:30px;">
+                                        <span class="col-xs-12 col-sm-6 text-left">Jan 2016 - July 2019</span>
+                                        <span class="col-xs-12 col-sm-6 text-right">Hyderabad, India</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="resume-box">
+                            <div class="row">
+                                <div class="col-xs-2 col-sm-2 col-md-2">
+                                    <img class="company-pic" src="images/Company/2-aon.png" alt="">
+                                </div>
+                                <div class="col-xs-9 col-sm-9 col-md-10 pull-right">
+                                    <h5>Aon Hewitt</h5>
+                                    <h3>Software Executive</h3>
+                                    <div class="row" style="height:30px;">
+                                        <span class="col-xs-12 col-sm-6 text-left">Aug 2015 – Jan 2016</span>
+                                        <span class="col-xs-12 col-sm-6 text-right">Gurgoan, India</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="resume-box">
+                            <div class="row">
+                                <div class="col-xs-2 col-sm-2 col-md-2">
+                                    <img class="company-pic" src="images/Company/1-icertis.png" alt="">
+                                </div>
+                                <div class="col-xs-9 col-sm-9 col-md-10 pull-right">
+                                    <h5>Icertis</h5>
+                                    <h3>Software Analyst</h3>
+                                    <div class="row" style="height:30px;">
+                                        <span class="col-xs-12 col-sm-6  text-left">Aug 2012 – Jul 2015</span>
+                                        <span class="col-xs-12 col-sm-6 text-right">Pune, India</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="row">
+                                <ul class="col-xs-12 col-sm-12 col-md-10 pull-right">
+                                    <li class="experiencelist">
+                                        Designed and developed a mobile phone application, HelpBridge which helps you connect with your loved ones during natural disasters.
+                                        Helpbridge also enables you to give your money, time and resources to support relief and rebuilding efforts.
+                                    </li>
+                                    <li class="experiencelist">
+                                        Designed, developed and delivered a web application ‘Retail process automation’, which streamline the process of opening Microsoft stores.
+                                    </li>
+                                    <li class="experiencelist">
+                                        Designed and developed companay's new website on Azure cloud. Migrated old data from leagacy databse to Azure cloud.
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end WorkExperience section -->
+            <!-- Education section -->
+            <section id="education">
+                <div class="mainContentBackground mainContentWrapper">
+                    <div class="section-title">
+                        <h2><i class="fa fa-university"></i> Education</h2>
+                    </div>
+                    <div class="content-box">
+                        <div class="resume-box">
+                            <div class="row">
+                                <div class="col-xs-2 col-sm-2 col-md-2">
+                                    <img class="company-pic" src="images/unipune.png" alt="">
+                                </div>
+                                <div class="col-xs-9 col-sm-9 col-md-10 pull-right">
+                                    <h5>University of Pune - Bachelor's Degree</h5>
+                                    <span>2008 – 2012</span>
+                                    <p>
+                                        Bachelor of Engineering in Information Technology
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end Education section -->
+            <section id="certificates">
+                <div class="mainContentBackground mainContentWrapper">
+                    <div class="section-title">
+                        <h2>Cetrificates</h2>
+                    </div>
+                    <div class="content-box">
+                        <div class="text-center">
+                            <div class="certCard">
+                                <img class="cert-img" src="images/Certificates/5.AzureCertificate.jpg" alt="">
+                            </div>
+                            <div class="certCard">
+                                <img class="cert-img" src="images/Certificates/01-AzSolutionArchitect-cert.png"
+                                     alt="">
+                            </div>
+                            <div class="certCard">
+                                <img class="cert-img" src="images/Certificates/02-DevOpsExpert-cert.png" alt="">
+                            </div>
+                            <div class="certCard">
+                                <img class="cert-img" src="images/Certificates/03-AzDataEngineer-cert.png" alt="">
+                            </div>
+                            <div class="certCard">
+                                <img class="cert-img" src="images/Certificates/04-DataAnalystAssociate-cert.png"
+                                     alt="">
+                            </div>
+                            <div class="certCard">
+                                <img class="cert-img" src="images/Certificates/04-DatabaseAdministrator-cert.png"
+                                     alt="">
+                            </div>
+                            <div class="certCard">
+                                <img class="cert-img" src="images/Certificates/05-AzAdminAssociate-cert.png"
+                                     alt="">
+                            </div>
+                            <div class="certCard">
+                                <img class="cert-img" src="images/Certificates/06-DevAssociate-cert.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</div>
+<!-- End Right Side bar -->

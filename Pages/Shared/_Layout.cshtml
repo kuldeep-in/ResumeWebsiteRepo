@@ -1,15 +1,29 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - ResumeWebsite</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/ResumeWebsite.styles.css" asp-append-version="true" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+          content="Passionate lead/developer having experience in consulting, designing, developing and delivering solutions to enterprises using Microsoft Azure Technologies. Azure, SQLAzure, CosmosDB, AzureDataFactory, WebApp" />
+    <meta name="keywords"
+          content="Azure, SQLAzure, CosmosDB, AzureDataFactory, WebApp, Data Engineer, Azure Certified Cloud Consultant">
+    <title>Kuldeep Singh - Cloud ARCHITECT, Manager, DevOps, Data Engineer</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+    <link href="css/responsive.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+
 </head>
 <body>
-    <header>
+@*    <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">ResumeWebsite</a>
@@ -29,18 +43,55 @@
                 </div>
             </div>
         </nav>
-    </header>
-    <div class="container">
+    </header>*@
+
+    <div class="right-br"></div>
+
+    <!-- Right Fixed social Icons  -->
+    <div class="fixed-right-socials">
+        <ul class="list-unstiled">
+            <li><a target="_new" href="https://github.com/kuldeepsingh-in"><i class="fa fa-github"></i></a></li>
+            <li><a target="_new" href="https://www.linkedin.com/in/kuldeepsingh-in/"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <!--<li><a target="_new" href="https://www.instagram.com/kuldeep.singh.k/"><i class="fa fa-instagram"></i></a></li> -->
+            <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            <li><a href="mailto:in.singhkuldeep@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+            <!--<li><a href="/PersonalProfile"><i class="fa fa-user-circle-o"></i></a></li> -->
+        </ul>
+    </div>
+
+    @RenderBody()
+    @*<div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
-    </div>
+    </div>*@
 
-    <footer class="border-top footer text-muted">
+    <!-- Footer -->
+    <footer class="copyright">
         <div class="container">
-            &copy; 2023 - ResumeWebsite - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            <div class="row">
+                <div class="col-xs-12 col-sm-9 col-sm-offset-3 footer-background">
+                    <div class="row">
+                        <div class="col-sm-6 text-left">
+                            Copyright &copy; 2020 Kuldeep. All rights reserved.
+                            <!-- <a target="_new" href="https://my.flightradar24.com/kdsingh1009">
+                                <img src="https://banners-my.flightradar24.com/kdsingh1009.png" alt="Kuldeep" />
+                            </a>-->
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            Designed By <a target="_blank" href="https://www.linkedin.com/in/kuldeepsingh-k">
+                                Kuldeep
+                                Singh
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </footer>
+    <!-- end Footer -->
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
