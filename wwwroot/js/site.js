@@ -1,4 +1,4 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your Javascript code.
@@ -91,7 +91,7 @@ var skillsList = [
     { text: "Azure Automation" },
     { text: "Azure DevOps" },
     { text: "Power Platform" },
-    { text: "ower BI / Power Apps" }
+    { text: "Power BI / Power Apps" }
 ];
 
 // Technologies
@@ -177,7 +177,7 @@ var badgeObjects = [
         webOnly: false
     },
     {
-        imageUrl: "images/Badges/DatabricksFundamentals.png",
+        imageUrl: "images/Badges/Databricks Fundamentals.png",
         fallbackImageUrl: "images/Badges/Badge_Fallback.png",
         altText: "Databricks Lakehouse Fundamentals",
         title: "Databricks Lakehouse Fundamentals",
@@ -212,17 +212,17 @@ var badgeObjects = [
         webOnly: false
     },
     {
-        imageUrl: "https://images.credly.com/images/63873eba-9e8c-41a9-8a35-9d23adee14cb/image.png",
+        imageUrl: "https://images.credly.com/images/27c40e7b-98b2-4312-b52c-4454f6c90c52/image.png",
         fallbackImageUrl: "images/Badges/Badge_Fallback.png",
-        altText: "Azure Data Explorer In-A-Day",
-        title: "Azure Data Explorer In-A-Day",
+        altText: "Kusto Detective Agency - S2E3",
+        title: "Kusto Detective Agency - S2E3",
         webOnly: false
     },
     {
-        imageUrl: "https://images.credly.com/images/1e07abc3-dc08-4320-af38-43824afc659d/image.png",
+        imageUrl: "https://images.credly.com/images/8fc10fee-7b05-4b86-8504-01abf614bcac/image.png",
         fallbackImageUrl: "images/Badges/Badge_Fallback.png",
-        altText: "Kusto Detective Agency",
-        title: "Kusto Detective Agency",
+        altText: "Kusto Detective Agency - S2E2",
+        title: "Kusto Detective Agency - S2E2",
         webOnly: false
     },
     {
@@ -230,7 +230,28 @@ var badgeObjects = [
         fallbackImageUrl: "images/Badges/Badge_Fallback.png",
         altText: "Kusto Detective Agency - S2E1",
         title: "Kusto Detective Agency - S2E1",
+        webOnly: true
+    },
+    {
+        imageUrl: "https://images.credly.com/images/63873eba-9e8c-41a9-8a35-9d23adee14cb/image.png",
+        fallbackImageUrl: "images/Badges/Badge_Fallback.png",
+        altText: "Azure Data Explorer In-A-Day",
+        title: "Azure Data Explorer In-A-Day",
         webOnly: false
+    },
+    {
+        imageUrl: "https://images.credly.com/images/6726e724-5ce8-477e-93f5-6b39d6933273/image.png",
+        fallbackImageUrl: "images/Badges/Badge_Fallback.png",
+        altText: "Kusto Detective Agency - 2022",
+        title: "Kusto Detective Agency - 2022",
+        webOnly: false
+    },
+    {
+        imageUrl: "https://images.credly.com/images/e7522dc8-886b-4a5b-9436-535e1adaa5c5/image.png",
+        fallbackImageUrl: "images/Badges/Badge_Fallback.png",
+        altText: "Kusto Detective Agency - S1E4",
+        title: "Kusto Detective Agency - S1E4",
+        webOnly: true
     },
     {
         imageUrl: "https://images.credly.com/images/6c7fb568-a3cb-4868-9563-34c31ba3e347/Valuable-Contributor-Silver.png",
@@ -391,6 +412,7 @@ for (var j = 0; j < badgeObjects.length; j++) {
 
     var cardBody = document.createElement("div");
     cardBody.classList.add("card-body");
+    cardBody.classList.add("webOnly");
 
     var badgeTitle = document.createElement("p");
     badgeTitle.classList.add("badgeTitle");
@@ -405,7 +427,6 @@ for (var j = 0; j < badgeObjects.length; j++) {
     badgeCard.appendChild(cardBody);
 
     badgeContainer.appendChild(badgeCard);
-    //}
 }
 
 // Function to handle fallback image loading
@@ -413,4 +434,110 @@ function createFallbackImageHandler(fallbackImageUrl) {
     return function () {
         this.src = fallbackImageUrl;
     };
+}
+
+var experienceList = [
+    {
+        company: "PwC UK",
+        jobTitle: "Manager / Cloud Solution Architect",
+        date: "June 2022 - Present",
+        location: "London, UK",
+        imageSrc: "images/Company/4-pwc.png"
+    },
+    {
+        company: "Microsoft",
+        jobTitle: "Cloud Solution Architect",
+        date: "July 2019 - May2022",
+        location: "London, UK",
+        imageSrc: "images/Company/3-msft.png"
+    },
+    {
+        company: "Microsoft",
+        jobTitle: "Consultant",
+        date: "Jan 2016 - July 2019",
+        location: "Hyderabad, India",
+        imageSrc: "images/Company/3-msft.png"
+    },
+    {
+        company: "Aon Hewitt",
+        jobTitle: "Software Engineer",
+        date: "Aug 2015 - Jan 2016",
+        location: "Gurgoan, India",
+        imageSrc: "images/Company/2-aon.png"
+    },
+    {
+        company: "Icertis",
+        jobTitle: "Software Analyst – Cloud Technologies",
+        date: "Aug 2012 - Jul 2015",
+        location: "Pune, India",
+        imageSrc: "images/Company/1-icertis.png"
+    }
+];
+
+var experienceContainer = document.getElementById("dynamicexperience");
+
+// Loop through the list and create divs dynamically
+for (var i = 0; i < experienceList.length; i++) {
+    // Create the outer div with the class "resume-box" and "row"
+    var resumeBox = document.createElement("div");
+    resumeBox.className = "resume-box row";
+
+    // Create the first inner div with the class "col-xs-3 col-sm-3 col-md-2"
+    var col1 = document.createElement("div");
+    col1.className = "col-xs-3 col-sm-3 col-md-2";
+
+    // Create the image element
+    var img = document.createElement("img");
+    img.className = "company-pic";
+    img.src = experienceList[i].imageSrc;
+    img.alt = "";
+
+    // Append the image to the first inner div
+    col1.appendChild(img);
+
+    // Create the second inner div with the class "col-xs-6 col-sm-6 col-md-6 text-left"
+    var col2 = document.createElement("div");
+    col2.className = "col-xs-9 col-sm-9 col-md-6 text-left";
+
+    // Create the heading element
+    var heading = document.createElement("h5");
+    //heading.className = "";
+    heading.textContent = experienceList[i].company;
+
+    // Create the span element for job title
+    var jobTitle = document.createElement("h3");
+    //jobTitle.className = "";
+    jobTitle.textContent = experienceList[i].jobTitle;
+
+    // Append the heading and job title to the second inner div
+    col2.appendChild(heading);
+    col2.appendChild(jobTitle);
+
+    // Create the third inner div with the class "col-xs-6 col-sm-6 col-md-4 pull-right text-right"
+    var col3 = document.createElement("div");
+    col3.className = "col-xs-9 col-sm-9 col-md-4 pull-right text-right";
+
+    // Create the date heading element
+    var dateHeading = document.createElement("span");
+    //dateHeading.className = "";
+    dateHeading.textContent = experienceList[i].date;
+
+    // Create the span element for location
+    var locationSpan = document.createElement("span");
+    //locationSpan.className = "";
+    locationSpan.textContent = experienceList[i].location;
+
+    var lineBreak = document.createElement("br");
+    // Append the date heading and location span to the third inner div
+    col3.appendChild(dateHeading);
+    col3.appendChild(lineBreak);
+    col3.appendChild(locationSpan);
+
+    // Append the three inner divs to the outer div
+    resumeBox.appendChild(col1);
+    resumeBox.appendChild(col2);
+    resumeBox.appendChild(col3);
+
+    // Append the outer div to the parent element
+    experienceContainer.appendChild(resumeBox);
 }

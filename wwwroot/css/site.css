@@ -1,9 +1,11 @@
 @font-face {
     font-family: "MyFont01";
-    src: url("/font/MyriadRegular.ttf") format("truetype");
+    src: url("font/MyriadRegular.ttf") format("truetype");
 }
 
 :root {
+    --font-family: "MyFont01", 'Titillium Web', sans-serif;
+
     --bgColor1: #0a1930;
     --bgColor2: #172b46;
     --bgColor3: #1d3658;
@@ -12,6 +14,9 @@
     --fontColor3: #919191;
     --fontColor4Green: #62c2bc;
     --buttonColor1: #30686f;
+    --githubColor: #141618;
+    --twittorColor: #26A7DE;
+    --linkedinColor: #0A66C2;
 }
 
 a {
@@ -19,7 +24,7 @@ a {
 }
 
     a:hover {
-        color: var(--fontColor1);
+        color: #ffffff;
     }
 
 .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn.active.focus {
@@ -70,7 +75,10 @@ a {
 body {
     background-color: var(--bgColor1);
     color: var(--fontColor1);
-    font: 300 16px "MyFont01",open Calibri,sans,sans-serif;
+    /*font: 300 16px "MyFont01",open Calibri,sans,sans-serif;*/
+    font-size: 16px;
+    font-weight: 300;
+    font-family: var(--font-family);
     letter-spacing: 0.5px;
     overflow-x: hidden;
 }
@@ -78,13 +86,13 @@ body {
 h1, h2 {
     letter-spacing: 1px;
     color: var(--fontColor4Green);
-    font-family: "MyFont01", 'Titillium Web', sans-serif;
+    font-family: var(--font-family);
 }
 
 h3, h4, h5 {
     margin: 0 0 10px;
     color: var(--fontColor1);
-    font-family: "MyFont01", 'Titillium Web', sans-serif;
+    font-family: var(--font-family);
 }
 
 h1 {
@@ -93,21 +101,24 @@ h1 {
 }
 
 h2 {
-    font: 200 38px "MyFont01","Titillium Web",serif;
+    font-size: 38px;
+    font-weight: 200;
 }
 
 h3 {
-    font: 900 16px "MyFont01","Titillium Web",serif;
+    font-size: 16px;
+    font-weight: 900;
     letter-spacing: 1.5px;
+}
+
+h4 {
+    font-size: 13px;
+    font-weight: 900;
 }
 
 .portfolio-filter ul li, .sidebar .nav li, h4 {
     letter-spacing: 1px;
     /*text-transform: uppercase;*/
-}
-
-h4 {
-    font: 900 13px "MyFont01","Titillium Web",serif;
 }
 
 p {
@@ -172,7 +183,7 @@ li {
     box-shadow: 0 3px 10px 3px rgba(0, 0, 0, 0.3);
     color: #fff;
     background: var(--bgColor2);
-    padding: 16px 0 0;
+    /* padding: 16px 0 0; */
     text-align: center;
     /*height: 100vh;*/
 }
@@ -188,9 +199,10 @@ li {
 }
 
 .user-pic {
-    border-radius: 140px;
-    width: 85%;
-    margin-bottom:15px;
+    border-radius: 100%;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .company-pic {
@@ -206,8 +218,8 @@ li {
 
 .sidebar .nav {
     padding: 20px 30px;
-     /*background: var(--bgColor2) none repeat scroll 0 0;*/ 
-    padding: 20px 10px;
+    /*background: var(--bgColor2) none repeat scroll 0 0;*/
+    padding: 15px 15px;
 }
 
 .toggle-btn {
@@ -222,9 +234,9 @@ li {
 
 .fixed {
     box-shadow: 0 3px 10px 3px rgba(0, 0, 0, 0.3);
-    left: 30px;
+    left: 15px;
     position: fixed;
-    right: 30px;
+    right: 15px;
     top: 0;
     width: auto;
 }
@@ -279,7 +291,7 @@ li {
     }
 
 .sidebar .nav li {
-    font: 600 18px "Titillium Web","Montserrat",serif;
+    font: 400 18px "MyFont01",open Calibri,sans,sans-serif;
     padding: 10px 0;
 }
 
@@ -291,13 +303,21 @@ li {
         transition: all 0.1s linear 0s;
     }
 
-        .sidebar .nav li a:hover, .sidebar .nav li.active a {
+        .sidebar .nav li.active {
             color: var(--fontColor4Green);
             opacity: unset;
             background: var(--bgColor3);
-            padding: 15px;
+            /*padding: 15px;*/
             border-radius:10px;
         }
+
+            .sidebar .nav li a:hover, .sidebar .nav li.active a {
+                color: var(--fontColor4Green);
+                opacity: unset;
+                /*background: var(--bgColor3);*/
+                /*padding: 15px;*/
+                /*border-radius:10px;*/
+            }
 
 .about-background {
     /*margin-bottom: -50px;*/
@@ -963,27 +983,27 @@ textarea {
 }
 
 .list-unstiled .fa-github {
-    background: var(--bgColor3) none repeat scroll 0 0;
+    background: var(--githubColor) none repeat scroll 0 0;
 }
 
 .left-social .fa-github {
-    background: var(--bgColor3) none repeat scroll 0 0;
+    background: var(--githubColor) none repeat scroll 0 0;
 }
 
 .list-unstiled .fa-twitter {
-    background: #3698A2 none repeat scroll 0 0;
+    background: var(--twittorColor) none repeat scroll 0 0;
 }
 
 .left-social .fa-twitter {
-    background: #3698A2 none repeat scroll 0 0;
+    background: var(--twittorColor) none repeat scroll 0 0;
 }
 
 .list-unstiled .fa-linkedin {
-    background: #097fc3 none repeat scroll 0 0;
+    background: var(--linkedinColor) none repeat scroll 0 0;
 }
 
 .left-social .fa-linkedin {
-    background: #097fc3 none repeat scroll 0 0;
+    background: var(--linkedinColor) none repeat scroll 0 0;
 }
 
 .list-unstiled .fa-instagram {
@@ -1026,12 +1046,13 @@ textarea:focus, textarea.form-control:focus, input.form-control:focus, input[typ
 
 .downloadResume {
     cursor: pointer;
-    /*width: 200px;*/
     color: var(--fontColor1);
-    background: var(--bgColor3);
+    background: var(--bgColor1);
     font-size: 1em;
-    padding: 6px 16px;
-    box-shadow: 1px 1px 4px rgba(230, 230, 230);
+    padding: .5em .5em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 15px rgba(230, 230, 230);
 }
 
     .downloadResume:focus {
@@ -1133,7 +1154,7 @@ textarea:focus, textarea.form-control:focus, input.form-control:focus, input[typ
     }
 
 .left-social {
-    display:none;
+    /*display:none;*/
     padding:10px;
 }
 
@@ -1142,7 +1163,7 @@ textarea:focus, textarea.form-control:focus, input.form-control:focus, input[typ
     }
 
         .left-social a i {
-            border-radius:20px;
+            border-radius: 20%;
             padding : 5px;
         }
 

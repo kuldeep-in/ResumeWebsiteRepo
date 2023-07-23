@@ -3,7 +3,10 @@ Small sm ?576px
 Medium md ?768px
 Large lg ?992px
 Extra large xl ?1200px
-Extra extra large xxl ?1400px*/
+Extra extra large xxl ?1400px
+
+    USE @media only max-width)
+*/
 
 /*M*/
 @media only screen and (min-width: 768px) {
@@ -23,6 +26,11 @@ Extra extra large xxl ?1400px*/
 
     .toggle-placeholder {
         display: none;
+    }
+
+    .badgeCard {
+        width: 10em;
+        margin-bottom: .5em;
     }
 
     .service-box, .skill-outer {
@@ -77,6 +85,11 @@ Extra extra large xxl ?1400px*/
     .badgeCard {
         width: 13rem;
     }
+
+    .downloadResume {
+        padding: .5em 2em;
+        /*margin-top: 30px;*/
+    }
 }
 
 /*XXL*/
@@ -118,17 +131,14 @@ Extra extra large xxl ?1400px*/
         width: 5.5em;
         padding: 5px;
     }
-
-    .webOnly {
-        display: none;
-    }
 }
 
 /*Small*/
 @media screen and (max-width: 767px) {
-    /*body {
-        background-color: #fff;
-    }*/
+
+    .webOnly {
+        display: none;
+    }
 
     .company-pic {
         border-radius: 10px;
@@ -148,12 +158,8 @@ Extra extra large xxl ?1400px*/
     }
 
     .downloadResume {
-        cursor: pointer;
-        /*width: 200px;*/
-        background: var(--buttonColor1);
         font-size: 1em;
-        padding: 10px 32px;
-        margin-top:30px;
+        padding: .5em 2.5em;
     }
 
     .section-title h2 i {
@@ -187,10 +193,6 @@ Extra extra large xxl ?1400px*/
         display: none;
     }
 
-    .left-social {
-        display: block;
-    }
-
     .menu {
         position: relative;
     }
@@ -201,7 +203,7 @@ Extra extra large xxl ?1400px*/
         left: 0;
         opacity: 0;
         position: absolute;
-        top: 60px;
+        top: 50px;
         transform: translateY(-10px);
         transition: all 0.3s ease-out 0s;
         visibility: hidden;
@@ -210,7 +212,7 @@ Extra extra large xxl ?1400px*/
     }
 
     .show-nav {
-        opacity: 1;
+        opacity: 0.95;
         transform: translateY(0px);
         visibility: visible;
     }
@@ -271,10 +273,6 @@ Extra extra large xxl ?1400px*/
         margin-left: 0;
     }
 
-    .card-body {
-        display: none;
-    }
-
     .line {
         width: 70%;
     }
@@ -285,14 +283,14 @@ Extra extra large xxl ?1400px*/
         background-color: var(--bgColor3);
     }
 
+        /*border: 0;*/
+        /*border-radius: 5px;*/
+        /*display: inline-block;*/
+        /*position: relative;*/
+        /*overflow: hidden;*/
     .badgeCard {
-        border: 0;
-        border-radius: 5px;
-        display: inline-block;
-        position: relative;
-        overflow: hidden;
-        width: 31%;
-        margin-bottom: 10px;
+        width: 7em;
+        margin-bottom: .5em;
         box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
     }
 
@@ -312,6 +310,20 @@ Extra extra large xxl ?1400px*/
         width: 4.5em;
         padding: 5px;
     }
+
+    .left-social {
+        /*display:none;*/
+        padding: 10px 0;
+    }
+
+        .left-social a {
+            margin: 4px;
+        }
+
+            .left-social a i {
+                border-radius: 20%;
+                padding: 4px;
+            }
 }
 
 /*@media screen and (max-width: 1199px) {*/
