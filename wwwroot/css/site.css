@@ -5,7 +5,6 @@
 
 :root {
     --font-family: "MyFont01", 'Titillium Web', sans-serif;
-
     --bgColor1: #0a1930;
     --bgColor2: #172b46;
     --bgColor3: #1d3658;
@@ -153,7 +152,7 @@ li {
     margin-top: 35px;
 }
 
-/*    .section-title h2::after {
+    /*    .section-title h2::after {
         background: #9c27b0 none repeat scroll 0 0;
         content: "";
         display: table;
@@ -170,7 +169,7 @@ li {
     }
 
     .section-title h2 i {
-        font-size:1.5em;
+        font-size: 1.5em;
     }
 
 .sidebar {
@@ -189,8 +188,8 @@ li {
 }
 
 .badge-img {
-    width:95%;
-    padding:5px;
+    width: 95%;
+    padding: 5px;
 }
 
 .cert-img {
@@ -207,8 +206,8 @@ li {
 
 .company-pic {
     border-radius: 10px;
-    width: 100%;
-    padding:5px;
+    width: 6em;
+    padding: 5px;
 }
 
 .badge-pic {
@@ -303,21 +302,21 @@ li {
         transition: all 0.1s linear 0s;
     }
 
-        .sidebar .nav li.active {
+    .sidebar .nav li.active {
+        color: var(--fontColor4Green);
+        opacity: unset;
+        background: var(--bgColor3);
+        /*padding: 15px;*/
+        border-radius: 10px;
+    }
+
+        .sidebar .nav li a:hover, .sidebar .nav li.active a {
             color: var(--fontColor4Green);
             opacity: unset;
-            background: var(--bgColor3);
+            /*background: var(--bgColor3);*/
             /*padding: 15px;*/
-            border-radius:10px;
+            /*border-radius:10px;*/
         }
-
-            .sidebar .nav li a:hover, .sidebar .nav li.active a {
-                color: var(--fontColor4Green);
-                opacity: unset;
-                /*background: var(--bgColor3);*/
-                /*padding: 15px;*/
-                /*border-radius:10px;*/
-            }
 
 .about-background {
     /*margin-bottom: -50px;*/
@@ -455,13 +454,13 @@ li {
 .imageHover span, .resume-box span {
     font-style: italic;
     padding-left: 0 !important;
-    padding-bottom:5px;
+    padding-bottom: 5px;
 }
 
-.resume-box p{
-    padding-bottom:15px;
-    padding-top:8px;
-    line-height:1.6em;
+.resume-box p {
+    padding-bottom: 15px;
+    padding-top: 8px;
+    line-height: 1.6em;
 }
 
 .portfolio-filter ul li:hover {
@@ -567,17 +566,17 @@ button.mfp-close:hover {
 
 .resumeWrapper {
     padding: 0;
-    margin-left:22%;
+    margin-left: 22%;
 }
 
 .resume-box {
-    padding:10px;
+    padding: 10px;
     margin-bottom: 20px;
     border-radius: 15px;
     background-color: var(--bgColor3);
 }
 
-    /*.resume-box:last-child {
+/*.resume-box:last-child {
         margin: 0;
     }*/
 
@@ -594,11 +593,11 @@ button.mfp-close:hover {
         width: 100px;
     }*/
 
-    /*.resume-box div:last-child {
+/*.resume-box div:last-child {
         padding-left: 130px;
     }*/
 
-   /* .resume-box span {
+/* .resume-box span {
         color: #a0a0a0;
         display: block;
         font-weight: 500;
@@ -932,7 +931,7 @@ textarea {
 
 .fixed-right-socials {
     /*bottom: 30%;*/
-    padding:10px;
+    padding: 10px;
     background: var(--bgColor2);
     position: fixed;
     right: 3px;
@@ -1056,11 +1055,11 @@ textarea:focus, textarea.form-control:focus, input.form-control:focus, input[typ
 }
 
     .downloadResume:focus {
-        color:var(--fontColor1);
+        color: var(--fontColor1);
     }
 
     .downloadResume:hover {
-        color:var(--fontColor3);
+        color: var(--fontColor3);
     }
 
 .content-box {
@@ -1073,16 +1072,16 @@ textarea:focus, textarea.form-control:focus, input.form-control:focus, input[typ
 
 .skill-label {
     border: 0;
-    padding:10px;
+    padding: 10px;
     border-radius: .8rem;
     display: inline-block;
     position: relative;
     overflow: hidden;
     margin-bottom: 7px;
     margin-right: 8px;
-    font-weight:400;
+    font-weight: 400;
     box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
-    background-color:var(--bgColor3);
+    background-color: var(--bgColor3);
 }
 
 .certCard {
@@ -1125,8 +1124,8 @@ textarea:focus, textarea.form-control:focus, input.form-control:focus, input[typ
 
     .badgeCard .card-body {
         min-height: 2.8em;
-        margin-top:5px;
-        margin-bottom:15px;
+        margin-top: 5px;
+        margin-bottom: 15px;
     }
 
     .badgeCard .card-body-pp {
@@ -1155,16 +1154,16 @@ textarea:focus, textarea.form-control:focus, input.form-control:focus, input[typ
 
 .left-social {
     /*display:none;*/
-    padding:10px;
+    padding: 10px;
 }
 
     .left-social a {
-        margin:8px;
+        margin: 8px;
     }
 
         .left-social a i {
             border-radius: 20%;
-            padding : 5px;
+            padding: 5px;
         }
 
 .line {
